@@ -26,7 +26,7 @@ public class FileSystemClassLoader extends ClassLoader {
         } else {
             ClassLoader parent = getParent();
             try {
-                parent.loadClass(name);
+               c=parent.loadClass(name);
             } catch (Exception e) {
                 e.printStackTrace();
             }
