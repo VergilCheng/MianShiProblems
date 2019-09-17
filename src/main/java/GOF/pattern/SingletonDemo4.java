@@ -14,7 +14,7 @@ package GOF.pattern;
 public class SingletonDemo4 {
 
     private static class SingletonClassInstance{
-        private static SingletonDemo4 instance = new SingletonDemo4();
+        private static final SingletonDemo4 instance = new SingletonDemo4();
     }
 
     public static SingletonDemo4 getInstance() {
